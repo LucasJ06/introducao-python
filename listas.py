@@ -24,5 +24,25 @@ print(f"O número {contar_num} aparece {repetidos} vez(es)")
 print(lista_numeros)
 
 
+"""programa que recebe idade"""
 
+idades = []
 
+while True:
+    idade = input("Entre com a idade: ")
+
+    if idade == "":
+        break
+
+    idades.append(int(idade))
+
+#mostrando algumas estatisticas com base nas idades recebidas
+media = sum(idades) / len(idades)
+minimo = min(idades)
+maximo = max(idades)
+qtd = len(idades)
+
+print(f"Média {media}")
+print(f"Minimo {minimo}")
+print(f"Maximo {maximo}")
+print(f"Qtde {qtd}")
