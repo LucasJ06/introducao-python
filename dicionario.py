@@ -59,3 +59,20 @@ if fruta in frutas:
     print(frutas[fruta])
 else:
     print("Entre com um valor valido!")
+
+#criando programa que conta quantas vezes a frase imputada se repete
+
+dados = {}
+contador = 0
+while True:
+    frase = input(f"Entre com a {contador + 1}° frase: ")
+    if frase == "":
+        break
+    contador += 1
+
+    if frase not in dados:
+        dados[frase] = 1
+    else:
+        dados[frase] += 1
+for i, j in dados.items():
+    print(i,"->", j)

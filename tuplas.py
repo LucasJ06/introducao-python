@@ -12,3 +12,7 @@ tupla_lucas[-1][1:]
 #a tupla não pode ser alterada, mas a lista dentro da tupla pode
 tupla_lucas[-1].append("Carolina")
 print(tupla_lucas)
+    
+
+
+
