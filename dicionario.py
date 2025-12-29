@@ -9,7 +9,6 @@ dados_lucas = {
         {"nome":"Assistente de RH", "empresa":"PDtec"},
         {"nome":"Assistente de People Analytics", "empresa": "Renner S.A"}
     ]
-
 }
 
 #%%
