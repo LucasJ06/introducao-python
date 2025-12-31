@@ -5,7 +5,7 @@ def f(x):
 print(f(4))
 
 #criando uma função para calcular juros compostos
-def juros_compostos(aporte, taxa, anos):
+def juros_compostos(aporte:int, taxa:float, anos:int) -> float:
     """
     juros compostos serve para calcular o retorno financeiro a partir de um aporte.
     Deve-se considerar o valor, a taxa de juros atual e o tempo (em anos) para 
@@ -24,3 +24,10 @@ def juros_compostos(aporte, taxa, anos):
     return aporte * (1 + taxa) ** anos
 
 juros_compostos(taxa = 0.13, anos = 4, aporte = 1000)
+
+#%%
+#criando uma funcao que nao recebe parametro
+def ola_mundo():
+    print("Boas vindas! Olá para você!")
+
+ola_mundo()
