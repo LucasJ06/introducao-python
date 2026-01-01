@@ -31,3 +31,22 @@ def ola_mundo():
     print("Boas vindas! Olá para você!")
 
 ola_mundo()
+
+#funcao que retorna se o numero é par ou impar
+def par_impar (numero: int)-> str:
+    if numero % 2 == 0:
+        print(f"O numero {numero} é par")
+    else:
+        print(f"O numero {numero} é impar")
+
+numero = int(input("Entre com um numero para verificar se ele é par ou impar: "))
+
+par_impar(numero)
+
+#funcao de soma
+def soma(a:float, b:float)-> float:
+    return a + b
+
+#funcao de media usando a funcao de soma
+def media(a:float, b:float)-> float:
+    return soma(a,b) / 2
