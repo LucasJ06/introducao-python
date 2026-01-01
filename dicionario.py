@@ -40,3 +40,39 @@ for i in dados_lucas:
 #outra forma de acessar
 for chave, valor in dados_lucas.items():
     print(chave,"-", valor)
+
+#Fazendo programa que recebe o nome de uma fruta e devolve o valor:
+fruta = input("Entre com o nome da fruta: ").upper()
+
+frutas = {
+    "PERA": "R$1,25",
+    "GOIABA": "R$2,15",
+    "ABACAXI": "R$3,20",
+    "JACA": "R$5,80",
+    "LARANJA": "R$0,65",
+    "LIMÃO": "R$1,25",
+    "MAÇÃ": "R$1,50",
+    "BANANA": "R$2,75",
+    "UVA": "R$1,90"
+}
+if fruta in frutas:
+    print(frutas[fruta])
+else:
+    print("Entre com um valor valido!")
+
+#criando programa que conta quantas vezes a frase imputada se repete
+
+dados = {}
+contador = 0
+while True:
+    frase = input(f"Entre com a {contador + 1}° frase: ")
+    if frase == "":
+        break
+    contador += 1
+
+    if frase not in dados:
+        dados[frase] = 1
+    else:
+        dados[frase] += 1
+for i, j in dados.items():
+    print(i,"->", j)
