@@ -75,3 +75,22 @@ b = float(input("Entre com o valor de b: "))
 c = float(input("Entre com o valor de c: "))
 d = float(input("Entre com o valor de d: "))
 print(f"Média: {media(a,b)}")
+
+
+#usando kwargs para ter varios elementos nao mapeados
+def calc_imposto(preco: float, tx_base = 0.3, **kwargs):
+    imposto = preco * tx_base
+
+    for i in kwargs:
+        print(i, kwargs[i])
+        imposto += preco * kwargs[i]
+
+    return imposto
+
+impostos_gerais = {
+    "municipio": 0.01,
+    "estadual": 0.005,
+    "nacional": 0.001
+
+}
+calc_imposto(preco= 100,tx_base= 0.3, **impostos_gerais, internacional = 0.00001)
