@@ -50,3 +50,28 @@ def soma(a:float, b:float)-> float:
 #funcao de media usando a funcao de soma
 def media(a:float, b:float)-> float:
     return soma(a,b) / 2
+
+a = float(input("Entre com o valor de a: "))
+b = float(input("Entre com o valor de b: "))
+
+print(f"Média: {media(a,b)}")
+
+
+#%%
+#criando funcao de soma com n argumentos
+
+def soma(a:float, b:float, *args)-> float:
+    valores = [a,b] + list(args) 
+    return sum(valores)
+
+#%%
+#criando funcao de media com n argumentos
+def media(a:float, b:float, *args)-> float:
+    return soma(a, b, *args) / (len(args) + 2)
+
+#%%
+a = float(input("Entre com o valor de a: "))
+b = float(input("Entre com o valor de b: "))
+c = float(input("Entre com o valor de c: "))
+d = float(input("Entre com o valor de d: "))
+print(f"Média: {media(a,b)}")
